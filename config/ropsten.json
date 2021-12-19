@@ -1,0 +1,9 @@
+{
+  "output": "generated/v0.",
+  "chain": "ropsten",
+  "datasources": [
+    { "address": "0x29E4d6c08e3AD060Dc2fC8DCE70AaB8C8c57563F", "startBlock": 11406356, "module": [ "erc20", "voting" ] },
+    { "address": "0x005d71553aD3f8f919E5121aA45Bf24594DCE0d6", "startBlock": 11633286, "module": [ "governor" ] },
+    { "address": "0x424E1eAe04a2580EcD4d5f19Ad5285cC2b05a05C", "startBlock": 11549177, "module": [ "erc20" ] }
+  ]
+}

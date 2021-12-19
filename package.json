@@ -1,0 +1,14 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "auto:ropsten": "yarn autogen:ropsten && yarn codegen && yarn build",
+    "autogen:ropsten": "graph-compiler --config config/ropsten.json --include node_modules/@openzeppelin/subgraphs/src/datasources --export-schema --export-subgraph",
+    "codegen": "graph codegen generated/v0.subgraph.yaml",
+    "build": "graph build generated/v0.subgraph.yaml",
+    "clean": "rm -rf build generated"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.25.1",
+    "@openzeppelin/subgraphs": "^0.1.6"
+  }
+}
