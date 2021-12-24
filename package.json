@@ -1,6 +1,8 @@
 {
   "license": "MIT",
   "scripts": {
+    "auto:mumbai": "yarn autogen:mumbai && yarn codegen && yarn build",
+    "autogen:mumbai": "graph-compiler --config config/mumbai.json --include node_modules/@openzeppelin/subgraphs/src/datasources --export-schema --export-subgraph",
     "auto:ropsten": "yarn autogen:ropsten && yarn codegen && yarn build",
     "autogen:ropsten": "graph-compiler --config config/ropsten.json --include node_modules/@openzeppelin/subgraphs/src/datasources --export-schema --export-subgraph",
     "codegen": "graph codegen generated/v0.subgraph.yaml",
